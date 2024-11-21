@@ -1,0 +1,132 @@
+.laptop-details-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .laptop-image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack image and buttons vertically */
+    justify-content: space-between; /* Space between the image and buttons */
+    align-items: center;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    padding: 50px; 
+    margin-top: 50px;
+  }
+  
+  .laptop-images {
+    max-width: 600px; /* Adjust image size */
+    background-color: #ffffff;
+    min-height: fit-content;
+  }
+  
+  .laptop-details-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    margin-right: 100px;
+    align-items: flex-start; /* Align all items to the left */
+    text-align: left; /* Ensure text alignment is also left */
+  }
+  
+  .tabs-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .Tab-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .Tab-button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .Action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add spacing between image and buttons */
+  }
+  
+  .Action-buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #e19020; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Action-buttons button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  .Original-price{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .Price-section{
+    height:50px;
+  }
+  
+  button {
+    background-color: #9ca7a8; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    text-align: center; 
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin: 5px; 
+    width: 100px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #36abb5; 
+    transform: scale(1.05); 
+  }
+  
+  button h3 {
+    margin: 0; 
+    font-size: 14px; 
+  }
+
+  /* Button Styles */
+.storage-btn {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.storage-btn:hover {
+  background-color: #ddd;
+}
+
+.storage-btn.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+  

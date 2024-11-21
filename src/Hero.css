@@ -1,0 +1,214 @@
+.hero {
+  position: relative;
+  background-color: rgb(22, 107, 181);
+  padding: 50px 20px;
+  text-align: center;
+  color: #c41414;
+  height: 100%;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px; /* Adjust width as needed */
+}
+
+.product-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+  order: -1; /* Ensures image is positioned at the top */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ffffff;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  color: #4d4949;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #e63946; /* Highlight color for price */
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, rgb(0, 0, 0), rgb(60, 150, 130));
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: relative;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4); /* Overlay for readability */
+  border-radius: 8px;
+}
+
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.product-carousel1 {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 50px;
+  scroll-behavior: smooth;
+  margin-left: 20px;
+}
+
+.product-container {
+  position: relative;
+  background: #ffffff;
+  color: #424242;
+  text-align: center;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-container:hover {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff5722;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.hover-zoom {
+  transition: transform 0.3s;
+}
+
+.product-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.catagories {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between each category */
+  color: #ddd;
+  text-align: center;
+}
+
+.catagories p {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(77, 77, 77, 0); /* Light background */
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.catagories p:hover {
+  color: #ffcc00;
+  background-color: rgba(255, 204, 0, 0.2); /* Subtle background color change on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .product-carousel1 {
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  .catagories {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+  .catagories p {
+    width: 100%; /* Make each item take full width on smaller screens */
+    margin: 5px 0;
+  }
+}

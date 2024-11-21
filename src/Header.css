@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: #fff;
+  height: 30px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-button, .signup-button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #4caf50;
+}
+
+.signup-button {
+  background-color: #007bff;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #ffcc00; /* Adjust this color as needed */
+  font-size: 1.2em; /* Adjust size as needed */
+}
+
+.hero-link, .cart-link {
+  display: flex;
+  color: #ffcc00;
+  margin-left: 80px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.hero-link:hover, .cart-link:hover {
+  color: #e6b800;
+  transform: scale(1.1);
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Auth buttons styling */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.profile-link,
+.logout-button {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #e63946;
+}
